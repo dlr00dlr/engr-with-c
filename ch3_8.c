@@ -5,10 +5,11 @@ int main(void)
 {
 	int num_data_pts=0; double time, motion, sum=0, max, min; FILE *sensor;
 	sensor = fopen(FILENAME,"r"); if (sensor == NULL) printf("Error opening input file\n");
-		else { while ((fscanf(sensor,"&lf &lf",&time,&motion)) == 1)
+		else { while ((fscanf(sensor,"&lf &lf",&time,&motion)) == 2)
 			{
 			num_data_pts++; 
-			if (num_data_pts == 1) max = min = motion; sum += motion;
+			if (num_data_pts == 1) max = min = motion;
+		       	sum += motion;
 			if (motion > max) max = motion;
 		 	if (motion < min) min = motion;
 			}
