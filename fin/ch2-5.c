@@ -12,15 +12,15 @@ int main(void)
 	
 	printf("float percision digits: %i \n",FLT_DIG);
 	printf("float maximum exponent: %i \n",FLT_MAX_10_EXP);
-	printf("float maximum: %e \n\n",FLT_MAX);
+	printf("float maximum: %.7e \n\n",FLT_MAX);
 
 	printf("double precision digits: %i \n",DBL_DIG);
 	printf("double maximum exponent: %i \n",DBL_MAX_10_EXP);
-	printf("double maximum: %e \n\n",DBL_MAX);
+	printf("double maximum: %.16e \n\n",DBL_MAX);
 
 	printf("long double precision digits: %i \n",LDBL_DIG);
 	printf("long double maximum exponents: %i \n",LDBL_MAX_10_EXP);
-	printf("long double maximum: %Le \n\n",LDBL_MAX);
+	printf("long double maximum: %.19Le \n\n",LDBL_MAX);
 
 	return 0;
 }
