@@ -14,6 +14,6 @@ int main(void)
 			case 5:six++;break;
 		}
 	}
-	printf("One: %i\nTwo: %i\nThree: %i\nFour: %i\nFive: %i\nSix: %i",one,two,three,four,five,six);
+	printf("One: %i\nTwo: %i\nThree: %i\nFour: %i\nFive: %i\nSix: %i\n",one,two,three,four,five,six);
 	return 0;
 }
